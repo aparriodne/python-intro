@@ -13,39 +13,39 @@ def print_menu():
     print(spacer)
     print('Calc 3000')
     print(spacer)
-    print('[1] sum two numbers')
-    print('[2] subtract two numbers')
-    print('[3] multipy two numbers')
-    print('[4] divide two numbers')
+    print('[+] sum two numbers')
+    print('[-] subtract two numbers')
+    print('[*] multipy two numbers')
+    print('[/] divide two numbers')
 
 # plain instruction
 print_menu()
 
+num1 = float(input("Please choose first number: "))
 opt = input("Please select an option: ")
+num2 = float(input("Please choose second number: "))
 
-if opt not in ('4' ,'3' ,'2' ,'1'):
-    print("Invalid option")
+if opt not in ('+' ,'-' ,'*' ,'/'):
+    print("INVALID OPTION!")
 
 else:
-    num1 = float(input("Please choose first number: "))
-    num2 = float(input("Please choose second number: "))
 
-    if opt == '1':
+    if opt == '+':
         result = num1 + num2
         print("Result is: " + str(result))
 
-    elif opt == '2':
+    elif opt == '-':
         result = num1 - num2
         print("Result is: " + str(result))
 
-    elif opt == '3':
+    elif opt == '*':
         result = num1 * num2
         print("Result is: " + str(result))
 
-    elif opt == '4':
+    elif opt == '/':
         
         if num2 == 0:
-            print("You cannot divide by zero!")
+            print("YOU CANNOT DIVIDE BY ZERO!")
 
         else:
             result = num1 / num2
