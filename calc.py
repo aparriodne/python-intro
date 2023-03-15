@@ -23,13 +23,11 @@ print_menu()
 opt = input('Please select an option:')
 num1 = float(input('please provide num1:'))
 num2 = float(input('please provide num2:'))
-print(opt)
 
-if opt > '4' or opt < '1':
-    print("IS INVALID OPTION!")
+if opt != '4' or '3' or '2' or '1':
+    print("YOU DID NOT CHOOSE A INVALID OPTION!")
 
 elif opt == '1':
-    
     result = num1 + num2
     print("The result is: " + str(result))
 
@@ -40,9 +38,11 @@ elif opt == '2':
 elif opt == '3':
     result = num1 * num2
     print("The result is: " + str(result))
-
-elif opt == '4':
+    
+elif opt == "4" and num2 == 0:
+    print("You can not divide a number by zero")
+    
+else:
     result = num1 / num2
-if num2 == '0': 
-        print("You can not divide by zero")
-else: print("The result is: " + str(result))
+    print("Result is: " + str(result))
+
