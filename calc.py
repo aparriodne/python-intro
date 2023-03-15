@@ -20,29 +20,33 @@ def print_menu():
 
 # plain instruction
 print_menu()
-opt = input('Please select an option:')
-num1 = float(input('please provide num1:'))
-num2 = float(input('please provide num2:'))
 
-if opt != '4' or '3' or '2' or '1':
-    print("YOU DID NOT CHOOSE A INVALID OPTION!")
+opt = input("Please select an option: ")
 
-elif opt == '1':
-    result = num1 + num2
-    print("The result is: " + str(result))
+if opt not in ('4' ,'3' ,'2' ,'1'):
+    print("Invalid option")
 
-elif opt == '2':
-    result = num1 - num2
-    print("The result is: " + str(result))
-
-elif opt == '3':
-    result = num1 * num2
-    print("The result is: " + str(result))
-    
-elif opt == "4" and num2 == 0:
-    print("You can not divide a number by zero")
-    
 else:
-    result = num1 / num2
-    print("Result is: " + str(result))
+    num1 = float(input("Please choose first number: "))
+    num2 = float(input("Please choose second number: "))
 
+    if opt == '1':
+        result = num1 + num2
+        print("Result is: " + str(result))
+
+    elif opt == '2':
+        result = num1 - num2
+        print("Result is: " + str(result))
+
+    elif opt == '3':
+        result = num1 * num2
+        print("Result is: " + str(result))
+
+    elif opt == '4':
+        
+        if num2 == 0:
+            print("You cannot divide by zero!")
+
+        else:
+            result = num1 / num2
+            print("Result is: " + str(result))
