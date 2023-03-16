@@ -14,10 +14,10 @@ def print_menu():
     print('Super Calculator!')
     print(spacer)
     print('Operation choices')
-    print('[+] sum two numbers')
-    print('[-] subtract two numbers')
-    print('[*] multipy two numbers')
-    print('[/] divide two numbers')
+    print(' [+] sum two numbers')
+    print(' [-] subtract two numbers')
+    print(' [*] multipy two numbers')
+    print(' [/] divide two numbers')
 
 # plain instruction
 print_menu()
