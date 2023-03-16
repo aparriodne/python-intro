@@ -11,8 +11,9 @@
 def print_menu():
     spacer = "-----------------"
     print(spacer)
-    print('Calc 3000')
+    print('Super Calculator!')
     print(spacer)
+    print('Operation choices')
     print('[+] sum two numbers')
     print('[-] subtract two numbers')
     print('[*] multipy two numbers')
@@ -22,7 +23,7 @@ def print_menu():
 print_menu()
 
 num1 = float(input("Please choose first number: "))
-opt = input("Please select an option: ")
+opt = input("Please select an operation: ")
 num2 = float(input("Please choose second number: "))
 
 if opt not in ('+' ,'-' ,'*' ,'/'):
